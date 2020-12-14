@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hassan Razak</title>
+    <link href="../css/styles.css" rel="stylesheet">
+    <script defer src="../js/functionality.js"></script>
+    <script defer src="../js/vue.js"></script>
+</head>
+
+<body>
+<!--div outside of grid used as a splash screen-->
+<div class="splash"><img class="fade-in" src="https://tse2.mm.bing.net/th?id=OIP.9E45Rj0WO2D7BOwcHxT5aQHaDh&pid=Api&P=0&w=364&h=173" alt = 'splash screen'></div>
+<!--div grid container to setup the grid-->
+<div class = "grid-container">
+    <!--header div to house name figure and navigation bar-->
+    <div class = 'item1'>
+
+        <h1 id="name">Hassan Razak</h1>
+        <nav>
+            <ul>
+                <li><a href="skeleton.html">Home</a></li>
+                <li><a href="Work.html">Work</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="app" class = 'item2'>
+        <img :src="soccerBall" alt="soccer">
+    </div>
+
+
+    <!--div to house description of education-->
+    <div id='basjitsu' class = 'item3'>
+        <h1>Basketball</h1>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.yS_WldTIc4627YLeFqN_4wHaFj&pid=Api&P=0&w=218&h=164" alt="basketball">
+        <h1>Juijitsu</h1>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.ezbewlPJsIjApDZc5NiyvAHaHa&pid=Api&P=0&w=300&h=300" alt="juijitsu">
+
+        </div>
+    <!--div to house information regarding professional description-->
+    <div id='weights' class = 'item4'>
+        <h1>Weight Lifting</h1>
+        <img src="https://www.hdwallpaper.nu/wp-content/uploads/2018/02/weightlifting-15-1024x675.jpg" alt="weight lifter">
+    </div>
+
+    <!--footer to house contact information-->
+    <div class = 'item5'>
+        <ul>
+            <li>Email: hassanrazak1991@gmail.com</li>
+            <li>Tel: 347-854-3733</li>
+        </ul>
+
+    </div>
+</div>
+<!--javascript file, added to the end of the file to ensure all html is loaded prior to executing scripts-->
+</body>
+</html>
