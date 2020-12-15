@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Hassan Razak</title>
     <link href="../css/styles.css" rel="stylesheet">
-    <script defer src="../js/functionality.js"></script>
     <script defer src="../js/vue.js"></script>
+    <script defer src="../js/functionality.js"></script>
+
 </head>
 
 <body>
@@ -19,40 +20,39 @@
         <h1 id="name">Hassan Razak</h1>
         <nav>
             <ul>
-                <li><a href="skeleton.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="Work.html">Work</a></li>
                 <li><a href="personal.html">Personal</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="pictures.html">Pictures</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                
             </ul>
         </nav>
     </div>
 
 
-    <div id="app" class = 'item2'>
-        <img :src="soccerBall" alt="soccer">
+    <div id="soccer" class = 'item2'>
+        <h1>Soccer</h1>
+        <img id='app' :src="soccerBall" alt="soccer" @mouseenter="switchHover" @mouseleave="switchBack">
     </div>
 
 
     <!--div to house description of education-->
-    <div id='basjitsu' class = 'item3'>
-        <h1>Basketball</h1>
-        <img src="https://tse4.mm.bing.net/th?id=OIP.yS_WldTIc4627YLeFqN_4wHaFj&pid=Api&P=0&w=218&h=164" alt="basketball">
+    <div id='app2' class = 'item3'>
         <h1>Juijitsu</h1>
-        <img src="https://tse2.mm.bing.net/th?id=OIP.ezbewlPJsIjApDZc5NiyvAHaHa&pid=Api&P=0&w=300&h=300" alt="juijitsu">
+        <img :src="bajitsu" alt="juijitsu" @mouseenter="switchHover" @mouseleave="switchBack">
 
         </div>
     <!--div to house information regarding professional description-->
-    <div id='weights' class = 'item4'>
+    <div id='app3' class = 'item4'>
         <h1>Weight Lifting</h1>
-        <img src="https://www.hdwallpaper.nu/wp-content/uploads/2018/02/weightlifting-15-1024x675.jpg" alt="weight lifter">
+        <img :src='weights' alt="weight lifter" @mouseenter="switchHover" @mouseleave="switchBack">
     </div>
 
     <!--footer to house contact information-->
     <div class = 'item5'>
         <ul>
-            <li>Email: hassanrazak1991@gmail.com</li>
+            <li><a href="mailto:hassanrazak1991@gmail.com?subject=Mail from our Website">Email: hassanrazak1991@gmail.com</a></li>
             <li>Tel: 347-854-3733</li>
         </ul>
 

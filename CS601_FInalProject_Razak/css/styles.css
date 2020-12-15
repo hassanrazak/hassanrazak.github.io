@@ -137,9 +137,9 @@ table, th, td {
     margin-left:70px;
 
 }
-/*
+
 /*CSS to control the splash screen. The .splash is classed for the div related to the image that fades in and out
-when the page is opened up or when someone selects the home screen.
+when the page is opened up or when someone selects the home screen.*/
 
 .splash{
     position: fixed;
@@ -152,9 +152,9 @@ when the page is opened up or when someone selects the home screen.
     color: white;
     text-align: center;
     line-height: 90vh;
-}*/
+}
 /* used to control the intermediate step in a the CSS animation done at .fade-in. It takes 1s for the image to
-become visible completely.
+become visible completely.*/
 @keyframes fadeIn{
     to{
     opacity:1;
@@ -165,9 +165,9 @@ become visible completely.
     opacity:0;
     animation:fadeIn 1s ease-in forwards;
 }
-*/*/
 
-/*use class list to set display_none to fade out the splash screen image
+
+/*use class list to set display_none to fade out the splash screen image*/
 .display_none{
     position: fixed;
     opacity:0;
@@ -181,13 +181,13 @@ become visible completely.
     text-align: center;
     line-height: 90vh;
 }
-*/*/
+
 /*formats splash screen image
 #universe{
     height: 100vh;
 }
 
-*/
+
 /*media queries used to stack navigation bar items when view window size changes*/
 
 img{
